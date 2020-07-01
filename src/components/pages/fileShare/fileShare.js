@@ -73,7 +73,39 @@ export default class FileShare extends Component {
         <button onClick={this.handleSubmit}>Send</button>
         <hr/>
         <button onClick={this.handleGetData}>Get Files</button>
-        {this.renderFiles()}
+        {/* {this.renderFiles()} */}
+        <div className="files-wrapper">
+          <SingleFile 
+            id={1} 
+            name={"Some File"} 
+            type={"Some Type"} 
+            handleDelete={this.handleDelete}
+          />
+          <SingleFile 
+            id={1} 
+            name={"Some File"} 
+            type={"Some Type"} 
+            handleDelete={this.handleDelete}
+          />
+          <SingleFile 
+            id={1} 
+            name={"Some File"} 
+            type={"Some Type"} 
+            handleDelete={this.handleDelete}
+          />
+          <SingleFile 
+            id={1} 
+            name={"Some File"} 
+            type={"Some Type"} 
+            handleDelete={this.handleDelete}
+          />
+          <SingleFile 
+            id={1} 
+            name={"Some File"} 
+            type={"Some Type"} 
+            handleDelete={this.handleDelete}
+          />
+        </div>
       </div>
     );
   }
